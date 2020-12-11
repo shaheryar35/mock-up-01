@@ -1,40 +1,36 @@
-html{
-  background: url(asserts//background.jpg) no-repeat center center fixed; 
+html {
+  background: url(asserts//background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+
   -o-background-size: cover;
   background-size: cover;
 }
 body {
- 
   font-family: sans-serif;
   font-size: 1.25rem;
   line-height: 150%;
-
- 
 }
 
 .container {
   display: flex;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  margin-right: 45px;
-  margin-left:45px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 8.5rem;
   margin-top: 50px;
-  
   border-radius: 25px;
- 
-
-
+  width: 75%;
+  height: 95%;
+  align-items: center;
+  background: #fff;
 }
-.container:hover{
-  box-shadow: 0 9px 16px 0 rgba(0,0,0,0.2);
+.container:hover {
+  box-shadow: 0 9px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .left-half {
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
-  background: #fff;
+
   flex: 1;
   padding: 1rem;
 }
@@ -43,56 +39,54 @@ body {
   background: #fff;
   flex: 1;
   padding: 1rem;
-  text-shadow: 0 2px 2px #b6701e;
   color: #fff;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
-  
 }
 .responsive {
   width: 100%;
-  max-width: 450px;
+  max-width: 400px;
   height: auto;
 }
 
-p{
-    color:red;
-    font-weight:bolder;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top:30px;
-    margin-left:30px;
+p {
+  color: red;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  margin-left: 30px;
 }
-h2{
-    font-size:50px;
-    color:#271a5d;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left:30px;
+h2 {
+  font-size: 50px;
+  color: #271a5d;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 30px;
 }
-input[type=submit] {
-    margin-top:30px;
+input[type="submit"] {
+  margin-top: 30px;
   background-color: #f11313;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 11px;
   cursor: pointer;
- 
+
   float: left;
-  font-size:27px;
+  font-size: 27px;
 }
-.lable1{
-font-size:14px;
-margin-left:10px;
+.lable1 {
+  font-size: 14px;
+  margin-left: 10px;
 }
 
-.checkbox{
-  height:17px;
-  width:17px;
+.checkbox {
+  height: 17px;
+  width: 17px;
 }
 .col-25 {
   float: left;
   width: 40%;
-  margin-top: 6px;
+
 }
 
 .col-75 {
@@ -101,32 +95,62 @@ margin-left:10px;
   margin-top: 6px;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-input[type=text]{
+input[type="text"] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  background-color:#fafbff;
+  background-color: #fafbff;
   border-radius: 4px;
   resize: vertical;
-
 }
-input[type=button] {
+input[type="button"] {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  background-color:#fafbff;
+  background-color: #fafbff;
   border-radius: 4px;
-  
+
   background: url(asserts//Button-Triangle.JPG);
-  position:left;
+  position: left;
   padding-left: 30px;
-  background-size: 20%;
-  background-repeat:no-repeat;
-
+  background-size: 30%;
+  background-repeat: no-repeat;
 }
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  p {
+    font-size: 15px;
+    margin-left: 0px;
+  }
+  h2 {
+    font-size: 40px;
+    margin-left: 0px;
+  }
+  .col-75 {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .col-Name {
+    width: 100%;
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+  }
 
+  h2 {
+    font-size: 40px;
+  }
+  input[type="text"] {
+    height: 8px;
+  }
+  input[type="button"] {
+    width: 80%;
+    height: 30px;
+  }
+}
